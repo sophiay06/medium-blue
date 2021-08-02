@@ -12,3 +12,9 @@
 #body{
     background-color: tan;
 }
+#map{
+    display: block;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
