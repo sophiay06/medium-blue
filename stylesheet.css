@@ -1,0 +1,14 @@
+#header{
+    color:cornsilk;
+    background-color:slategrey;
+    border: blanchedalmond;
+    border-width: 5px;
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive;
+}
+#body{
+    background-color: tan;
+}
