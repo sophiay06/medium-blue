@@ -17,4 +17,16 @@
     margin-top: 150px;
     margin-right: auto;
     margin-left: auto;
+ 
+}
+.image {
+    display: inline;
+    position: relative;
+    height: 55px;
+    width: 75px;
+    bottom: 405px;
+    left: 425px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
 }

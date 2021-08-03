@@ -2,23 +2,23 @@
 <html lang="en-us">
 <head>
     <title>7 Wonderful Facts</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <link href="stylesheet.css" rel="stylesheet">
-<div id="header">
-    <h1>Welcome to 7 Facts about the 7 Wonders!</h1>
-</div>
-<body id="body">
-    <img id = "map", src="https://i.pinimg.com/originals/20/b1/21/20b121e7788471dcb4280da97b4cef3f.jpg" alt="map of 7 wonders">
-    <script>
-        $("#map").click(function(){
-            $("#map").hide();
-        });
-        $("#title").click(function() {
-        
-            $("#map").show();
-        
-        });
 
-       
+<body id="body">
+    <div id="header">
+        <h1 id="title">Welcome to 7 Facts about the 7 Wonders!</h1>
+    </div>
+    
+    <img id ="map" src="https://i.pinimg.com/originals/20/b1/21/20b121e7788471dcb4280da97b4cef3f.jpg" alt="map of 7 wonders">
+    <img class ="image" id="rome" src="assets/Colosseum-Rome-Italy.jpg">
+    <script>
+        var rome = $("#rome");
+
+        $("#rome").click(function () {
+            rome.animate({ height: "300px", width: "500px" });
+        });
         </script>
 </body>
