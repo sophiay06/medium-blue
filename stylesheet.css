@@ -1,0 +1,32 @@
+#header{
+    color:cornsilk;
+    background-color:slategrey;
+    border: blanchedalmond;
+    border-width: 5px;
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive;
+}
+#body{
+    background-color: tan;
+}
+#map{
+    display: block;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+ 
+}
+.image {
+    display: inline;
+    position: relative;
+    height: 55px;
+    width: 75px;
+    bottom: 405px;
+    left: 425px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+}
