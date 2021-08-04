@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>7 World Wonders</title>
+    <meta name="author" content="Codeconvey" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .margin{
+        margin-top:250px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8; 
+        cursor: pointer; 
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container */
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+    <!--Only for demo purpose - no need to add.-->
+    
+	
+</head>
+<body>
+	<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>7</b> World Wonders</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="w3-bar-item w3-button">Map</a>
+        <a href="#about" class="w3-bar-item w3-button">More Pic</a>
+        <a href="#contact" class="w3-bar-item w3-button">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="https://i.redd.it/6w63okz3v5x01.png" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"> <span class="w3-hide-small w3-text-light-grey">Welcome to 7 Facts about the 7 Wonders!</span></h1>
+    </div>
+  </header>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Map Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Map</h3>
+  </div>
+  <section>
+      <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                
+  <!-- partial:index.partial.html -->
+  <div id="image-map">
+    <img width="800" height="700" src="https://i.pinimg.com/originals/20/b1/21/20b121e7788471dcb4280da97b4cef3f.jpg" alt="Our Locations">   
+    
+    
+    <div class="pin pin-down" data-xpos="619" data-ypos="295">  
+      <h2>Great Wall of China</h2>     
+      <ul>
+        <li>The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. An interesting fact about it is that it took over 200 years to build.</li>
+        <li><img src="https://cdn.britannica.com/54/122154-050-4DA0F697/Great-Wall-of-China.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+    
+    <div class="pin pin-down" data-xpos="537" data-ypos="315">
+      <h2>Taj Mahal, India</h2>     
+      <ul>
+        <li>The Taj Mahal is an ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. An interesting fact about the Taj Mahal is that the palace was designed so that everything would fall away from the tomb in the event of a collapse.</li>
+        <li><img src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+
+    <div class="pin pin-down" data-xpos="448" data-ypos="307">
+      <h2>Great Pyramid of Giza, Egypt</h2>     
+      <ul>
+        <li>The Great Pyramid of Giza is the oldest out of all of the seven wonders of the world and one of the biggest pyramids in its area in Egypt. It is believed that the 454 ft pyramid was built as a burial ground for the late King Khufu and other notable Pharaohs that were alive during a period known as “the old kingdom”. Fun fact for around 3000 years it was the tallest structure in the world.</li>
+        <li><img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860_main_GreatPyramid_0.gif" height="200" width="300"></li>
+      </ul>
+    </div>
+
+    <div class="pin pin-down" data-xpos="392" data-ypos="262">  
+      <h2>Colosseum, Italy</h2>     
+      <ul>
+        <li>This Gladiatorial Arena was built in Rome, Italy beginning around 71 CE and ending in 82 CE. This structure could fit 50,000 spectators. A fun fact about the Colosseum is that it was originally called the Flavian Amphitheatre.</li>
+        <li><img src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+
+    
+    <div class="pin pin-down" data-xpos="170" data-ypos="340">  
+      <h2>Chichen Itza, Mexico</h2>     
+      <ul>
+        <li>Chichen Itza is an ancient Mayan city built in Yucatán state, Mexico. It was constructed in the 6th century. An interesting fact about Chichen Itza is that the famous Pyramid that many people associate with this location actually contains smaller Pyramids within it.</li>
+        <li><img src="https://wallpaperaccess.com/full/1453155.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+    <div class="pin pin-down" data-xpos="208" data-ypos="427">
+      <h2>Machu Picchu, Peru</h2>     
+      <ul>
+        <li>Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. A fun fact about Machu Picchu is that no wheels were used to transport heavy rocks for the construction of the city.</li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="pin pin-down" data-xpos="257" data-ypos="460">
+      <h2>Christ Redeemer, Brazil</h2>     
+      <ul>
+        <li>Christ the redeemer is a statue of Jesus Christ that was built and sculpted in Rio de Janeiro. The design was originally made by a french man named Paul Landowski and was officially constructed by an engineer named Heitor da Silva Costa in between 1922-1931. Fun fact this statue is the largest art deco statue on earth with a max height of around 30 meters.</li>
+        <li><img src="https://cdn.britannica.com/54/150754-050-5B93A950/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg" height="200" width="300"></li>
+      </ul>
+    </div>
+    </div>
+
+  </div>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./script.js"></script>
+
+          
+            
+          </div>
+      </div>
+      </div>
+  </section>
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">More Pic</h3>
+    <div class="row">
+      <div class="column">
+        <img src="china.jpeg" alt="Great Wall of China" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="tajmahal.jpeg" alt="Taj Mahal, India" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="giza.jpeg" alt="Great Pyramid of Giza, Egypt" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="rome.jpeg" alt="Colosseum, Italy" style="width:100%" onclick="myFunction(this);">
+      </div>
+    <div class="row">
+      <div class="column">
+        <img src="chichen.jpeg" alt="Chichen Itza, Mexico" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="machu.jpeg" alt="Machu Picchu, Peru" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="christ.jpeg" alt="Christ Redeemer, Brazil" style="width:100%" onclick="myFunction(this);">
+      </div>
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+  
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">More Info</h3>
+  </div>
+    <!-- ANALYTICS -->
+   <footer class="w3-center w3-black w3-padding-16 margin">
+    <p>Created by Medium-Blue</p>
+  </footer>
+	</body>
+</html>
