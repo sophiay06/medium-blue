@@ -1,3 +1,4 @@
+/* CSS for the map pin section */
 /* Web Font */
 * {
     font-family: 'Titillium Web', sans-serif; 
@@ -77,3 +78,78 @@
     padding: 0;
     list-style: none;
 }
+
+
+.margin{
+    margin-top:250px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+        display: table-cell;
+        width: 266px;
+        height: 150px;
+        border: 1px solid white;
+        background-image: url("https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/06/1.-Intrepid-Travel-peru_machupicchu.jpg") ; 
+        cursor: pointer;
+    }
+
+    .tile1 {background-position: left top;}
+    .tile2 {background-position: center top;}
+    .tile3 {background-position: right top;}
+    .tile4 {background-position: left center;}
+    .tile5 {background-position: center center;}
+    .tile6 {background-position: right center;}
+    .tile7 {background-position: left bottom;}
+    .tile8 {background-position: center bottom;}
+    .tile9 {background: white; cursor: default;}	
