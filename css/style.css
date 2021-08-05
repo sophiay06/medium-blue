@@ -153,3 +153,10 @@
     .tile7 {background-position: left bottom;}
     .tile8 {background-position: center bottom;}
     .tile9 {background: white; cursor: default;}	
+    
+    #nameText{
+      font-family:monospace;
+    }
+    #name{
+      font-family: cursive;
+    }
