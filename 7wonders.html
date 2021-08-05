@@ -7,85 +7,26 @@
     <title>7 World Wonders</title>
     <meta name="author" content="Codeconvey" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <!-- Style CSS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./script.js"></script> 
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      .margin{
-        margin-top:250px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-
-      /* The grid: Four equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 25%;
-        padding: 10px;
-      }
-
-      /* Style the images inside the grid */
-      .column img {
-        opacity: 0.8; 
-        cursor: pointer; 
-      }
-
-      .column img:hover {
-        opacity: 1;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* The expanding image container */
-      .container {
-        position: relative;
-        display: none;
-      }
-
-      /* Expanding image text */
-      #imgtext {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        color: white;
-        font-size: 20px;
-      }
-
-      /* Closable button inside the expanded image */
-      .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
-      }
-    </style>
-    <!--Only for demo purpose - no need to add.-->
     
-	
 </head>
 <body>
-	<div class="w3-top">
+	<div class="w3-top"> <!-- NavBar -->
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
       <a href="#home" class="w3-bar-item w3-button"><b>7</b> World Wonders</a>
-      <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="#projects" class="w3-bar-item w3-button">Map</a>
-        <a href="#about" class="w3-bar-item w3-button">More Pic</a>
-        <a href="#contact" class="w3-bar-item w3-button">More Info</a>
+        <a href="#map" class="w3-bar-item w3-button">Map</a>
+        <a href="#pictures" class="w3-bar-item w3-button">More Pictures</a>
+        <a href="#game" class="w3-bar-item w3-button">Puzzle Game</a>
       </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="https://i.redd.it/6w63okz3v5x01.png" alt="Architecture" width="1500" height="800">
+    <img class="w3-image" src="https://i.redd.it/6w63okz3v5x01.png" alt="7 Wonders" width="1500" height="800">
     <div class="w3-display-middle w3-margin-top w3-center">
       <h1 class="w3-xxlarge w3-text-white"> <span class="w3-hide-small w3-text-light-grey">Welcome to 7 Facts about the 7 Wonders!</span></h1>
     </div>
@@ -93,16 +34,18 @@
 
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-    <!-- Map Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+    <!-- Header of the Map Section -->
+  <div class="w3-container w3-padding-32" id="map">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Map</h3>
   </div>
+</div>
+
   <section>
       <div class="rt-container">
             <div class="col-rt-12">
                 <div class="Scriptcontent">
                 
-  <!-- partial:index.partial.html -->
+  <!-- Map -->
   <div id="image-map">
     <img width="800" height="700" src="https://i.pinimg.com/originals/20/b1/21/20b121e7788471dcb4280da97b4cef3f.jpg" alt="Our Locations">   
     
@@ -154,7 +97,6 @@
         <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg" height="200" width="300"></li>
       </ul>
     </div>
-    </div>
 
     <div class="pin pin-down" data-xpos="257" data-ypos="460">
       <h2>Christ Redeemer, Brazil</h2>     
@@ -163,20 +105,14 @@
         <li><img src="https://cdn.britannica.com/54/150754-050-5B93A950/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg" height="200" width="300"></li>
       </ul>
     </div>
-    </div>
 
   </div>
-  <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script  src="./script.js"></script>
 
-          
-            
-          </div>
-      </div>
-      </div>
+  <!-- Script of the map section --> 
   </section>
-  <div class="w3-container w3-padding-32" id="about">
+
+  <!-- More Pictures section -->
+  <div class="w3-container w3-padding-32" id="pictures">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">More Pic</h3>
     <div class="row">
       <div class="column">
@@ -208,22 +144,35 @@
     <div id="imgtext"></div>
   </div>
   
-  <script>
-  function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-  }
-  </script>
-  
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">More Info</h3>
+  <!-- Puzzle Game section -->
+  <div class="w3-container w3-padding-32" id="game top">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Puzzle Game</h3>
+    <center><div id="table" style="display: table;">
+        <div id="row1" style="display: table-row;">
+           <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
+           <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
+           <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
+        </div>
+        <div id="row2" style="display: table-row;">
+           <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
+           <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
+           <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
+        </div>
+        <div id="row3" style="display: table-row;">
+           <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
+           <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
+           <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
+        </div>
+     </div>
+       <button onClick="shuffle();">New Game</button>
+     </center>
   </div>
-    <!-- ANALYTICS -->
-   <footer class="w3-center w3-black w3-padding-16 margin">
-    <p>Created by Medium-Blue</p>
-  </footer>
-	</body>
+
+
+ <!-- footer section -->
+<footer class="w3-center w3-black w3-padding-16 margin">
+  <p>Created by Medium-Blue</p>
+</footer>
+
+</body>
 </html>
